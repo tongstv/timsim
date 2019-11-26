@@ -1,0 +1,19 @@
+<tbody>
+{section name=d loop=$data}
+{$row=$data[d]}
+
+<tr>
+<td class="center ">{$row.stt}</td>
+<td class="text-center"><a href="{$thisdomain}/{$row.sim2}.html" title="{$row.sim1}" ><strong class="font-16 sim text-center">{$row.sim1}</strong></a></td>
+<td class="font-13 text-center" >{($row.giaban*1000000)|number_format} đ</td>
+<td  class="text-center center">{$row.tong}</td>
+<td  class="text-center"><span class="network n{$row.mang}"></span></td>
+<td  class="hidden"><label class="label">{$row.nguhanh}</label><label > <strong>{$row.amduong.menh}</strong></label>{$row.amduong.soduong}/{$row.amduong.soam} </td>
+<td class="text-center center"><a href="{$thisdomain}/{$row.sim2}.html" class="btn btn-xs btn-primary">Đặt mua</a></td>
+<td class="text-center center"><a  data-toggle="tooltip" title="Thêm {$row.sim1} vào giỏ hàng" href="javascript://" class="bg-icon1" data-sim="{$row.sim2}" data-gia="{$row.giaban}">
+</a></td>
+
+</tr>
+
+{/section}
+</tbody>

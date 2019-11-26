@@ -1,0 +1,43 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h1 class="panel-title">Tin tức sim số đẹp</h1>
+  </div>
+  <div class="panel-body">
+
+
+
+    {section name=d loop=$data}
+    {$row=$data[d]}
+     <div class="row" style="padding: 25px;">
+     
+     <h3><a href="/p/{$row.page_url}">{$row.page_title}</a></h3>
+     
+     
+     <div class="row">
+     
+     <div class="col-md-4 col-lg-4">
+     
+    {if isset($row.img)}
+    
+<a href="/p/{$row.page_url}">
+ <div class="img-thumbnail">
+    {$row.img}
+    </div>
+    </a>
+    {else}
+        
+        {/if}
+     </div>
+     
+          <div class="col-md-8 col-lg-8">
+          
+          {$row.page_detail|substr:0:350}..
+          </div>
+     </div>
+     </div>
+    {/section}
+
+  </div>
+</div>
+
+<div class="pagination">{$paging}</div>

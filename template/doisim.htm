@@ -1,0 +1,55 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h2 class="panel-title">Đổi sim 11 số sang 10 số</h2>
+  </div>
+  <div class="panel-body">
+   <div class="jumbotron">Quý khách có thể tùy chỉnh đầu các mạng khác hiện tại chỉ nhập sẵn 3 mạng chính</div>
+    <form method="POST" class="form-horizontal">
+    
+      <div class="form-group">
+      
+      <label class="control-label col-md-3">Đầu cũ</label>
+      <div class="col-md-9">
+      
+      <input class="form-control" name="daucu" value="0120,0121,0122,0126,0128,0123,0124,0125,0127,0162,0163,0164,0165,0166,0167,0168,0169" />
+      </div>
+      </div>
+    
+    
+          <div class="form-group">
+      
+      <label class="control-label col-md-3">Đầu mới</label>
+      <div class="col-md-9">
+      
+      <input class="form-control" name="daumoi" value="070,079,077,076,078,083,084,085,082,032,033,034,035,036,037,038,039" />
+      </div>
+      </div>
+      
+      <div class="form-group">
+      
+      <label class="control-label col-md-12"></label>
+      <div class="col-md-12">
+      
+    <textarea name="list1" class="form-control" rows="20" placeholder="Nhập danh sách sim 11 số mỗi số 1 dòng"></textarea>
+      </div>
+      </div>
+    
+   
+    
+        <div class="row">
+        
+        
+        <button class="btn btn-success center-block">Thực hiện chuyển đổi</button>
+        </div>
+    
+    
+    </form>
+ 
+ 
+    {if isset($data)}
+    
+    <textarea class="form-control" rows="50">{$data}</textarea>
+    {/if}
+ 
+  </div>
+</div>

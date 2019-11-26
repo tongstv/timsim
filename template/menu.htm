@@ -1,0 +1,90 @@
+
+
+<nav class="navbar-default hidden-xs">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+         
+           <button class="bt123"  type="button" class="pull-right visible-xs" data-toggle="collapse" data-target=".navbar-menubuilder">
+         <i  class="glyphicon glyphicon-list icoin123" ></i>
+         <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+       
+            </button>
+          <a class="navbar-brand" href="{$thisdomain}">
+         
+  <div id="logo">
+          
+              
+          </div></a>
+        </div>
+         <div class="collapse navbar-collapse navbar-menubuilder hidden-xs">
+         
+            <ul class="nav navbar-nav navbar-left">
+
+           
+                           {$menu}
+            </ul>
+             <div class="hottopr hidden-xs" id="ht1">
+       
+        {if isset($hottopr)}{$hottopr.detail}{/if}
+        
+       
+        
+        </div>
+
+        </div>
+     
+      </div>
+    </nav>
+   
+   </nav>
+   
+   <div class="visible-xs">
+ 
+ <header id="luxbar" class="luxbar-fixed">
+    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+    <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-cyan">
+        <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <a  href="{$thisdomain}"><div id="logo"></div></a>
+                <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+                
+               
+            </li>
+         
+        </ul>
+         {$menu1}
+         <div class="row">
+         <div class="col-xs-6">
+         
+         <ul class="nav nav-divider">
+         <li><a href="/p/huong-dan-mua-hang">Hướng dẫn mua hàng</a></li>
+         <li><a href="/p/thanh-toan">Thanh toán</a></li>
+           <li><a href="/p/cam-ket-ban-hang">Cam kết bán hàng</a></li>
+                    <li><a href="/p/lien-he">Liên hệ</a></li>
+         </ul>
+         </div>
+         
+         
+          <div class="col-xs-6">
+          
+           <ul class="nav nav-divider">
+         <li><a href="/p/cau-hoi-thuong-gap">Câu hỏi thường gặp</a></li>
+         <li><a href="/p/dang-ky-thong-tin">Đăng ký thông tin</a></li>
+           <li><a href="/p/cam-ket-ban-hang">Cam kết bán hàng</a></li>
+                    <li><a href="/p/tong-dai-nha-mang">Tổng đài nhà mạng</a></li>
+         </ul>
+          </div>
+         </div>
+    </div>
+</header>
+
+
+
+
+
+    </div>

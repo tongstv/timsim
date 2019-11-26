@@ -1,0 +1,16 @@
+.panel-heading 
+{
+    background: #E7E7E6;
+
+    line-height: 48px;
+    text-align: center;
+    
+}
+.panel-heading  h1, .panel-heading  h2
+{
+
+}
+.list-group-item
+{
+    display: block;
+}

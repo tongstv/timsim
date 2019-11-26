@@ -1,0 +1,9 @@
+<form method="POST" class="form-inline" id="loc">
+<strong>Lọc danh sách:</strong>
+{if !$smarty.get.price}
+{html_options name=loctheogia options=$gia selected=$giaselect Class="locgia"}
+{/if}
+{if !$smarty.get.network}
+{html_options name=loctheomang options=$mang selected=$mangselect class="locmang"}
+{/if}
+</form>
